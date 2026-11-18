@@ -10,3 +10,5 @@
 | 如何及早发现集成问题？ | 频繁集成，用自动构建和测试缩短反馈时间。[Martin Fowler · Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html) |
 | Web 服务怎样稳定交付？ | 显式声明依赖、分离配置与代码，缩小运行环境差异。[The Twelve-Factor App（简体中文）](https://12factor.net/zh_cn/) |
 | Agent 反复犯同样的错怎么办？ | 把反复纠正的错误转成代码约束，通过真实入口验证行为。参看 Lauren Tan 的[演讲与字幕](https://ai.engineer/code/2026/talks/lauren-tan)、[pstack 源码](https://github.com/cursor/plugins/tree/main/pstack)、[重复错误处理](https://github.com/cursor/plugins/blob/main/pstack/skills/correct/SKILL.md)和[应用验证流程](https://github.com/cursor/plugins/blob/main/pstack/skills/create-verification-skill/SKILL.md)。 |
+| 偶发故障涉及多个组件，先查哪里？ | 对照正常与异常路径，在组件边界观察差异，验证单一假设。[Superpowers · systematic-debugging](https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md) |
+| 审查发现靠什么证据成立？ | 对照操作、预期和观察结果复核发现。本工作流也接受能逐步推导的代码反例，并注明依据。[pstack · interrogate](https://github.com/cursor/plugins/blob/main/pstack/skills/interrogate/SKILL.md) |
