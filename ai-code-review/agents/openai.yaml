@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI 代码独立审查"
+  short_description: "面向 AI 代码的分支与合并后复核，覆盖需求、系统一致性、回归与并发"
+  default_prompt: "使用 $ai-code-review 审查当前变更，说明审查阶段与版本，给出独立审查结论、证据、未验证项及下一步。"
